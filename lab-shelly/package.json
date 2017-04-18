@@ -1,0 +1,27 @@
+{
+  "name": "lab-shelly",
+  "version": "1.0.0",
+  "description": "lab for class-02",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ./lib",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "package.json",
+    "scripts",
+    "call",
+    "bind",
+    "apply"
+  ],
+  "author": "shelly",
+  "license": "ISC"
+}
