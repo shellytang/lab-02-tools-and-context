@@ -7,21 +7,21 @@ exports.Pet = function(name, type) {
   this.type = type;
   return `${name} is a ${type}`
 };
-
+//call example
 exports.Cat = function(name, type) {
   exports.Pet.call(this, name, type);
   this.isFluffy = true;
   this.treat = 'catnip';
   return `${name} is a ${type} who likes ${this.treat}`
 };
-
+//apply example
 exports.Fish = function(name, type) {
   exports.Pet.call(this, name, type);
   this.isFluffly = false;
   this.treat = 'worms';
   return `${name} is a ${type} who likes ${this.treat}`
 }
-
+//bind example
 exports.greeting = {
   greet: 'meow',
   sayHi: function() {
