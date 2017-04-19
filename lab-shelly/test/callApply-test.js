@@ -60,15 +60,12 @@ describe('callApply.js', function() {
       assert.equal(callApply.greeting.sayHi(), 'meow');
     });
     let getGreet = callApply.greeting.sayHi;
+    it('should return undefined', function() {
+      assert.equal(getGreet.greet, undefined);
+    });
     let boundGreeting = getGreet.bind(callApply.greeting);
     it('should return meow', function() {
       assert.equal(boundGreeting(), 'meow');
     });
   });
 });
-
-
-
- //should return undefined
-  // let boundGreeting = getGreet.bind(greeting);
-  // boundGreeting(); //should return meow

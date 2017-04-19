@@ -28,9 +28,3 @@ exports.greeting = {
     return this.greet;
   }
 };
-
-// greeting.sayHi(); //will return meow
-//
-// let getGreet = greeting.sayHi; //should return undefined
-// let boundGreeting = getGreet.bind(greeting);
-// boundGreeting(); //should return meow
