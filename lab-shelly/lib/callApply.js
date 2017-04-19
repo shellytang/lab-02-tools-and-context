@@ -27,4 +27,4 @@ exports.greeting = {
   sayHi: function() {
     return this.greet;
   }
-};
+}
