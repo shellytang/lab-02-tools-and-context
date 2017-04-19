@@ -54,4 +54,21 @@ describe('callApply.js', function() {
       assert.equal(callApply.Fish('Goldie', 'goldfish'), 'Goldie is a goldfish who likes worms');
     });
   });
+
+  describe('greet', function() {
+    it('should return meow', function() {
+      assert.equal(callApply.greeting.sayHi(), 'meow');
+    });
+    let getGreet = callApply.greeting.sayHi;
+    let boundGreeting = getGreet.bind(callApply.greeting);
+    it('should return meow', function() {
+      assert.equal(boundGreeting(), 'meow');
+    });
+  });
 });
+
+
+
+ //should return undefined
+  // let boundGreeting = getGreet.bind(greeting);
+  // boundGreeting(); //should return meow
