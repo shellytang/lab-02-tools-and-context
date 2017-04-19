@@ -21,7 +21,7 @@ exports.Fish = function(name, type) {
   this.treat = 'worms';
   return `${name} is a ${type} who likes ${this.treat}`
 }
-//bind example
+//bind example - used example similar to MPN documentation(creating bound function)
 exports.greeting = {
   greet: 'meow',
   sayHi: function() {
