@@ -16,7 +16,7 @@ exports.Cat = function(name, type) {
 };
 //apply example
 exports.Fish = function(name, type) {
-  exports.Pet.call(this, name, type);
+  exports.Pet.apply(this, [name, type]);
   this.isFluffly = false;
   this.treat = 'worms';
   return `${name} is a ${type} who likes ${this.treat}`
